@@ -51,15 +51,15 @@ var multiBtn = document.getElementById("multi");
 var output = document.getElementById("output");
 
 addBtn.addEventListener("click", function() {
-  output.value = adder(num1.value, num2.value);
+  output.value = calculate(num1.value, num2.value, adder);
 });
 subBtn.addEventListener("click", function() {
-  output.value = suber(num1.value, num2.value);
+  output.value = calculate(num1.value, num2.value, suber);
 });
 divBtn.addEventListener("click", function() {
-  output.value = diver(num1.value, num2.value);
+  output.value = calculate(num1.value, num2.value, diver);
 });
 multiBtn.addEventListener("click", function() {
-  output.value = multiplyer(num1.value, num2.value);
+  output.value = calculate(num1.value, num2.value, multiplyer);
 });
 
